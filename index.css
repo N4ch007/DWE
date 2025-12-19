@@ -1,0 +1,87 @@
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* --- MENÚ PRINCIPAL --- */
+nav {
+    background-color: #c00;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu > li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+/* Hover principal */
+.menu > li > a:hover {
+    background-color: #fff;
+    color: #c00;
+    border-radius: 5px;
+}
+
+/* --- DROPDOWN --- */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #900;
+    min-width: 230px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.4);
+    padding: 0;
+    margin-top: 5px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #600;
+}
+
+.dropdown-content li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-content a {
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #900;
+}
+
+/* Mostrar el menú al pasar el mouse */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
